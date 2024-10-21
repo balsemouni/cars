@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar with CSS Grid</title>
+    <link rel="stylesheet" href="stylenav.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>QUICKFIX</h1>
+            <ul id="menu-list">
+                <li class="menu">MENU</li>
+                <li class="item1"><a href="#">Réparation de Voitures</a></li> 
+                <li class="item2"><a href="#">Lavage de Voitures</a></li> 
+                <li class="item3"><a href="#">Diagnostic de Voitures</a></li> 
+            </ul>
+            <div id="indicator"></div>
+
+        </div>
+        <div class="search-image-container">
+            <div class="search-wrapper">
+                <input type="text" id="search" placeholder="Search...">
+                <img class="image1" src="./images/icons8-search-30.png" alt="Search Icon">
+            </div>
+        </div>
+    </div>
+
+    <div id="info-box" class="info-box hidden">
+        <p>Information about the selected item</p>
+    </div>
+
+</body>
+</html>
