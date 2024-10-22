@@ -3,23 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cardlayout.css">
     <title>Card Layout</title>
+    <link rel="stylesheet" href="stylenav.css">
+    <link rel="stylesheet" href="cardlayout.css">
 </head>
 <body>
-    <div class="card-container">
-        <div class="card">
-            <img src="./images/images (4).jpg" alt="Image 1">
-            <p>Description for Image Card 1</p>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h1><a href="file:///home/saib/Desktop/cars-main/first_page.html" class="link">QUICKFIX</a></h1>
+            <ul id="menu-list">
+                <li class="menu">MENU</li>
+                <li class="item"><a href="file:///home/saib/Desktop/cars-main/aside-nav.html">Lavage de Voitures</a></li> 
+                <li class="item"><a href="file:///home/saib/Desktop/cars-main/cardlayout.html">Réparation de Voitures</a></li> 
+                <li class="item"><a href="file:///home/saib/Desktop/cars-main/diagnostic.html">Diagnostic de Voitures</a></li> 
+            </ul>
+            <div id="indicator"></div>
         </div>
-        <div class="card">
-            <img src="./images/images (4).jpg" alt="Image 2">
-            <p>Description for Image Card 2</p>
-        </div>
-        <div class="card">
-            <img src="./images/images (4).jpg" alt="Image 3">
-            <p>Description for Image Card 3</p>
+        <div class="full-card-container">
+            <!-- Search Bar -->
+            <div class="search-image-container">
+                <div class="search-wrapper">
+                    <input type="text" id="search" placeholder="Search...">
+                    <img class="image1" src="./images/icons8-search-30.png" alt="Search Icon">
+                </div>
+            </div>
+
+            <!-- Cards Section -->
+            <div>
+                <div class="card-rep">
+                    <img src="./images/images (4).jpg" alt="Engine Repair">
+                    <div class="details">
+                        <h4 class="name-rep">Engine Repair</h4>
+                        <p>Complete diagnostic and repair of engine issues.</p>
+                    </div>
+                    <p class="price">250.00$</p>
+                </div>
+                <div class="card-rep">
+                    <img src="./images/images (4).jpg" alt="Transmission Repair">
+                    <div class="details">
+                        <h4 class="name-rep">Transmission Repair</h4>
+                        <p>Fixing and rebuilding of transmission systems.</p>
+                    </div>
+                    <p class="price">400.00$</p>
+                </div>
+                <div class="card-rep">
+                    <img src="./images/images (4).jpg" alt="Brake Replacement">
+                    <div class="details">
+                        <h4 class="name-rep">Brake Replacement</h4>
+                        <p>Brake pad replacement and system inspection.</p>
+                    </div>
+                    <p class="price">150.00$</p>
+                </div>
+                <div class="card-rep">
+                    <img src="./images/images (4).jpg" alt="Tire Change">
+                    <div class="details">
+                        <h4 class="name-rep">Tire Change</h4>
+                        <p>Professional tire fitting and balancing.</p>
+                    </div>
+                    <p class="price">50.00$</p>
+                </div>
+                <div class="card-rep">
+                    <img src="./images/images (4).jpg" alt="Battery Replacement">
+                    <div class="details">
+                        <h4 class="name-rep">Battery Replacement</h4>
+                        <p>Replacement of car batteries with diagnostics.</p>
+                    </div>
+                    <p class="price">120.00$</p>
+                </div>
+                <div class="card-rep">
+                    <img src="./images/images (4).jpg" alt="Air Conditioning Repair">
+                    <div class="details">
+                        <h4 class="name-rep">Air Conditioning Repair</h4>
+                        <p>Repair of faulty AC systems and recharging.</p>
+                    </div>
+                    <p class="price">180.00$</p>
+                </div>
+                <div class="card-rep">
+                    <img src="./images/images (4).jpg" alt="Suspension Repair">
+                    <div class="details">
+                        <h4 class="name-rep">Suspension Repair</h4>
+                        <p>Repair and replacement of shocks and struts.</p>
+                    </div>
+                    <p class="price">300.00$</p>
+                </div>                
+            </div>                        
         </div>
     </div>
 </body>
 </html>
+

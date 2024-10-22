@@ -1,4 +1,3 @@
-/* General Styling */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -65,6 +64,8 @@ h1 {
 .full-card-container {
     margin-left: 70px;
     /* padding: 20px; */
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .search-image-container {
@@ -107,83 +108,47 @@ h1 {
     width: 20px;
 }
 
-.cards-section {
-    padding-left: 1rem;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Default: 5 cards for large screens */
-    gap: 20px;
-    padding-top: 50px;
-}
-
-.card {
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    background-image: url(images/lav.jpg);
-    height: 350px;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-}
-
-.description {
-    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
-    backdrop-filter: blur(1px); /* Adds blur effect to the background */
-    height: 150px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.name {
-    font-size: 24px;
-    font-weight: 700;
-    /* color: #CBB26A; */
-}
-
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .cards-section {
-        grid-template-columns: repeat(3, 1fr); /* Medium screens: 3 cards */
-    }
-}
-
-@media (max-width: 768px) {
-    .cards-section {
-        grid-template-columns: 1fr; /* Small screens: 1 card */
-    }
-
-    .search-wrapper {
-        width: 100%;
-    }
-}
-
 .link {
     text-decoration: none;
     color: #CBB26A;
 }
 
-table {
-    margin-top: 50px;
+.diagnostic-container {
+    margin-left: 1rem;
+    margin-top: 20px;
+    overflow-x: auto;
+    display: flex;
+    height: 930px;
+    padding-bottom: 100px;
 }
 
-th, td {
-    height: 50px;
-    text-align: center;
+.diagnostic-card {
+    width: 450px;
+    min-width: 450px;
+    height: 80%;
+    margin-right: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: hidden;
 }
-.prices-h {
-    font-weight: bold;
+
+.diagnostic-card:last-child {
+    margin-right: 0;
+}
+
+.diagnostic-card img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.diagnostic-card h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #CBB26A;
+}
+.diagnostic-card p {
+    padding: 0px 10px;
+    font-size: 24px;
 }
